@@ -1,0 +1,402 @@
+/*  Variables */
+:root {
+	--main-color: #ffe100;
+}
+/*  Variables */
+
+/* Globale style */
+button,
+[type="submit"] {
+	background-color: var(--main-color);
+	border: none;
+	width: 180px;
+	text-transform: uppercase !important;
+	padding: 13px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover,
+[type="submit"]:hover,
+.blog .container .showBlog div:hover {
+	box-shadow: 3px 3px 6px 4px #9e9e9ebd;
+}
+.work .container .showWork div div::before,
+.blog .container .showBlog div::before,
+.work .container .showWork div div::after {
+	content: " ";
+	position: absolute;
+}
+.blog .container .showBlog div:hover::before,
+.work .container .showWork div div:hover::before {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: large;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	background-color: var(--main-color);
+	cursor: pointer;
+}
+button,
+[type="submit"],
+.work .container .showWork div div::before,
+.blog .container .showBlog div,
+.blog .container .showBlog div::before,
+.work .container .showWork div div::after {
+	transition: 1s cubic-bezier(0, 0, 0.2, 1);
+	-webkit-transition: 1s cubic-bezier(0, 0, 0.2, 1);
+	-moz-transition: 1s cubic-bezier(0, 0, 0.2, 1);
+	-ms-transition: 1s cubic-bezier(0, 0, 0.2, 1);
+	-o-transition: 1s cubic-bezier(0, 0, 0.2, 1);
+}
+h1 {
+	font-size: 53px !important;
+	margin: 20px 0 !important;
+	text-transform: capitalize;
+}
+ul {
+	width: 50%;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.about p,
+.blog p,
+.contact p {
+	width: 500px;
+	margin: 50px 0;
+}
+section > div {
+	margin: 75px 0px;
+}
+
+/* Globale item */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0px;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+}
+.page {
+	margin: 0px auto;
+	padding: 0px auto;
+	/* background-color: rgb(230, 222, 222); */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.container {
+	width: 974px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+header {
+	height: 120px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header .container ul {
+	width: 50%;
+}
+header .container .logo {
+	width: 10%;
+	display: flex;
+	align-items: center;
+}
+header .container .logo img {
+	width: 240px;
+	height: 96px;
+	position: relative;
+	left: -20px;
+}
+
+.Hello .container .image img {
+	width: 490px;
+	height: 445px;
+	position: relative;
+	right: -80px;
+}
+.Hello .container .inf {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.Hello .container .inf p {
+	margin: 30px 0;
+}
+
+.Hello .container .inf button a {
+	text-decoration: none;
+	color: #000;
+}
+
+.work .container,
+.blog .container {
+	flex-direction: column;
+}
+.work .container .select {
+	display: flex;
+	justify-content: space-between;
+	margin: 4px 0px 50px;
+}
+.work .container .select ul {
+	width: 48%;
+	justify-content: space-between;
+}
+.work .container .select ul li {
+	padding: 14px;
+}
+.work .container .select ul li.selected {
+	background-color: var(--main-color);
+	/* padding: 0; */
+}
+.work .container .select .sort {
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	padding: 14px;
+}
+.work .container .select .sort::after,
+footer .toTop div::after {
+	content: " ";
+	border: 4px solid;
+	border-color: transparent black black transparent;
+	position: absolute;
+	right: -10px;
+	top: 10px;
+	width: 6px;
+	height: 6px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+.work .container .select .sort:hover::after,
+.work .container .select .sort:hover {
+	cursor: pointer;
+	color: rgb(12, 122, 53);
+}
+.work .container .showWork,
+.blog .container .showBlog {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.work .container .showWork div,
+.blog .container .showBlog div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	position: relative;
+}
+
+.work .container .showWork div div:hover::before {
+	content: "ARTWORK";
+	font-size: 38px;
+	width: 100%;
+	height: 100%;
+}
+.work .container .showWork div div:hover::after {
+	content: attr(data-text);
+	text-transform: uppercase;
+	position: absolute;
+	top: 60%;
+	left: 35%;
+	font-weight: 600;
+}
+.work .container .showWork .one img,
+.blog .container .showBlog img.one {
+	width: 310px;
+	height: 305px;
+}
+.work .container .showWork .two img {
+	width: 310px;
+	height: 505px;
+}
+.work .container button {
+	position: relative;
+	left: 42%;
+}
+.work .container .icon {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.about .someInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 12px;
+}
+.about .someInfo h3 {
+	text-transform: capitalize;
+}
+.about .someInfo p {
+	width: 278px;
+}
+.about .container img {
+	height: 505px;
+	width: 300px;
+	border: 2px solid;
+}
+.about .container .man1info {
+	position: relative;
+}
+.about .container .man1info.one::before,
+.about .container .man1info.two::before {
+	content: "Mohamed Naser";
+	background-color: var(--main-color);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px;
+	width: 190px;
+	height: 45px;
+	text-align: center;
+}
+.about .container .man1info.one::after,
+.about .container .man1info.two::after {
+	content: "Web Developer";
+	padding: 0;
+	position: absolute;
+	left: 54px;
+	text-align: center;
+	bottom: 8px;
+	color: white;
+}
+.blog .container .showBlog div {
+	gap: 5px;
+	width: 310px;
+	justify-content: center;
+	position: relative;
+}
+.blog .container .showBlog div:hover::before {
+	content: "read more";
+	height: 306px;
+	width: 310px;
+}
+.blog .container .showBlog div h4 {
+	margin-left: 20px;
+}
+.blog .container .showBlog div h4:last-child {
+	margin-bottom: 18px;
+}
+.blog .container .showBlog div p {
+	width: 95%;
+	margin: 18px 0 18px 10px;
+}
+.contact h2 {
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+.contact .container .myImg img {
+	/* width: 490px; */
+	height: 445px;
+	/* position: relative; */
+	/* right: -80px; */
+}
+.contact .container,
+footer .container {
+	align-items: center;
+}
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 5px;
+}
+input,
+textarea {
+	border: none;
+	height: 40px;
+	padding: 6px;
+	background: #ededed;
+	text-transform: capitalize;
+	margin: 4px 0px 4px 5px !important;
+}
+input::selection {
+	border: none;
+}
+
+.contact .social {
+	/* margin: 25px 0; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact .social .iconcon,
+.contact .social .iconso {
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+
+.contact .social .iconcon {
+	width: 100%;
+}
+.contact .social .iconso {
+	width: 50%;
+}
+.contact .social .iconcon .material-icons-outlined,
+.contact .social .iconso .fab {
+	position: relative;
+}
+
+.material-icons-outlined::before {
+	content: attr(data-text);
+	position: absolute;
+	left: -70px;
+	bottom: -27px;
+	width: 200px;
+	text-align: center;
+}
+span#wysiwyg::before {
+	bottom: -47px;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #221d1d;
+	text-transform: capitalize;
+}
+footer .img {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer .img img {
+	background-color: #b3b3b37d;
+}
+footer .toTop {
+	position: relative;
+	text-transform: uppercase;
+	color: white;
+	right: 25px;
+}
+footer .toTop a {
+	color: white;
+	text-decoration: none;
+}
+footer .toTop div::after {
+	top: 5px;
+	right: -23px;
+	border-color: white transparent transparent white;
+}
