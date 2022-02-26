@@ -1,13 +1,5 @@
 /* Small Mobile */
 
-@media (max-width: 375px) {
-	.container {
-		width: 375px;
-	}
-}
-
-/* Mobile */
-
 @media (max-width: 767px) {
 	header,
 	section {
