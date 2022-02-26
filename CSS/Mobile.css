@@ -43,6 +43,9 @@
 		width: 345px;
 		height: 345px;
 	}
+	.mobile{
+		display: block;
+	}
 	h1 {
 		font-size: 25px !important;
 		margin: 20px 0 !important;
