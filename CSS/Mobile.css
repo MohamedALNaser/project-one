@@ -1,0 +1,135 @@
+/* Small Mobile */
+
+@media (max-width: 375px) {
+	.container {
+		width: 375px;
+	}
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+	header,
+	section {
+		width: 365px;
+	}
+	.container {
+		width: 365px;
+		flex-direction: column;
+		/* align-items: center; */
+		justify-content: center;
+	}
+	.contact .container {
+		align-items: flex-start;
+	}
+	header .container {
+		flex-direction: row;
+	}
+	header .container .nav {
+		position: absolute;
+		right: 36px;
+	}
+	header .container ul.hed,
+	.screen,
+	.work .container .showWork .col2,
+	.work .container .showWork .col3,
+	.about .container .man1info.two,
+	.contact .container .myImg img,
+	.contact .social,
+	.work .container .select ul {
+		display: none;
+	}
+	.work .container .showWork,
+	.blog .container .showBlog {
+		flex-wrap: wrap;
+	}
+
+	.Hello .container .image img {
+		right: 0px;
+	}
+	.Hello .container .image img {
+		width: 345px;
+		height: 345px;
+	}
+	h1 {
+		font-size: 25px !important;
+		margin: 20px 0 !important;
+	}
+	section > div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.about p,
+	.blog p,
+	.contact p {
+		width: 100%;
+		font-size: 15px;
+	}
+	.about .container img {
+		width: 310px;
+	}
+	.about .container,
+	footer .container {
+		flex-direction: column;
+	}
+	.work .container .select {
+		width: 100%;
+	}
+	.work .container .showWork,
+	.blog .container .showBlog {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		/* flex-wrap: wrap; */
+		flex-direction: column;
+	}
+	.work .container button {
+		position: relative;
+		left: 0;
+	}
+	.work .container .showWork .one img,
+	.work .container .showWork .two img,
+	.blog .container .showBlog img.one,
+	.blog .container .showBlog div {
+		width: 365px;
+		box-shadow: none !important;
+	}
+	.blog .container .showBlog div:hover::before {
+		width: 365px;
+	}
+
+	.material-icons-outlined::before {
+		content: "";
+		position: absolute;
+		left: -70px;
+		bottom: -27px;
+		width: 200px;
+		text-align: center;
+	}
+	footer {
+		background-color: #b5b5b5;
+	}
+	footer .container .social .iconcon {
+		display: block;
+		display: flex;
+		justify-content: space-evenly;
+		gap: 37px;
+	}
+	footer .img {
+		left: -34px;
+	}
+	footer .img p {
+		position: absolute;
+		bottom: 0px;
+		left: 22px;
+	}
+	.container .contant {
+		display: flex;
+		align-items: center;
+	}
+	footer .toTop {
+		position: absolute;
+		right: 25px;
+	}
+}

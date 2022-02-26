@@ -1,3 +1,9 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+}
 /*  Variables */
 :root {
 	--main-color: #ffe100;
@@ -37,7 +43,7 @@ button:hover,
 	align-items: center;
 	position: absolute;
 	top: 0;
-	background-color: var(--main-color);
+	background-color: rgb(255 225 0 / 60%);
 	cursor: pointer;
 }
 button,
@@ -90,7 +96,6 @@ body {
 }
 .page {
 	margin: 0px auto;
-	padding: 0px auto;
 	/* background-color: rgb(230, 222, 222); */
 	display: flex;
 	flex-direction: column;
@@ -110,6 +115,10 @@ header {
 	justify-content: space-around;
 	align-items: center;
 }
+header .container {
+	justify-content: space-between;
+	align-items: center;
+}
 header .container ul {
 	width: 50%;
 }
@@ -124,7 +133,56 @@ header .container .logo img {
 	position: relative;
 	left: -20px;
 }
-
+header .container .nav {
+	position: relative;
+}
+header .container .nav .icon {
+	width: 5px;
+	height: 5px;
+	display: flex;
+	flex-direction: column;
+	background-color: #d7d2d2bf;
+	gap: 4px;
+}
+header .container .nav .icon span {
+	border: 1px solid;
+	border-color: transparent transparent black transparent;
+	width: 26px;
+	background-color: black;
+}
+header .container .nav ul {
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: #d7d2d2bf;
+	width: fit-content;
+	padding: 10px;
+	gap: 5px;
+	align-items: flex-start;
+	display: none;
+}
+header .container .nav ul li {
+	border-bottom: 1px solid #c3c2c2;
+	width: 100%;
+	cursor: pointer;
+	transition: 2s;
+	-webkit-transition: 2s cubic-bezier(0, 0, 0.2, 1);
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-o-transition: 2s;
+}
+header .container .nav ul li:hover {
+	transform: translateX(5px);
+	-webkit-transform: translateX(5px);
+	-moz-transform: translateX(5px);
+	-ms-transform: translateX(5px);
+	-o-transform: translateX(5px);
+}
+header .container .nav ul li:last-child {
+	border-bottom: none;
+}
+.mobile {
+	display: none;
+}
 .Hello .container .image img {
 	width: 490px;
 	height: 445px;
@@ -198,6 +256,7 @@ footer .toTop div::after {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
+	flex-wrap: wrap;
 }
 .work .container .showWork div,
 .blog .container .showBlog div {
@@ -267,7 +326,7 @@ footer .toTop div::after {
 	background-color: var(--main-color);
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 4px;
 	padding: 10px;
 	width: 190px;
 	height: 45px;
@@ -309,10 +368,10 @@ footer .toTop div::after {
 	text-transform: uppercase;
 }
 .contact .container .myImg img {
-	width: 490px;
-    height: 445px;
-    position: relative;
-    right: -80px;
+	width: 344px;
+	height: 308px;
+	position: relative;
+	right: -80px;
 }
 .contact .container,
 footer .container {
@@ -379,13 +438,21 @@ footer {
 	background-color: #221d1d;
 	text-transform: capitalize;
 }
+footer .container .social .iconcon {
+	display: none;
+}
 footer .img {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 }
+
 footer .img img {
 	background-color: #b3b3b37d;
+}
+footer .container {
+	position: relative;
 }
 footer .toTop {
 	position: relative;
