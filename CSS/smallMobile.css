@@ -15,12 +15,11 @@
 	footer .img img {
 		width: 270px;
 	}
-
 	.Hello .container .image img {
 		height: 215px;
 	}
 	textarea#message {
-		width: 264px;
+		width: 264px !important;
 	}
 	footer .container .social .iconcon {
 		gap: 24px;
