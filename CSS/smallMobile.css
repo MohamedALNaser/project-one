@@ -1,0 +1,38 @@
+@media (min-width: 270px) and (max-width: 375px) {
+	header,
+	section,
+	.container,
+	.Hello .container .image img,
+	.about .container img,
+	.work .container .showWork .one img,
+	.work .container .showWork .two img,
+	.blog .container .showBlog img.one,
+	.blog .container .showBlog div,
+	.blog .container .showBlog div:hover::before,
+	form,
+	footer .img img {
+		width: 270px;
+	}
+
+	.Hello .container .image img {
+		height: 215px;
+	}
+	textarea#message {
+		width: 264px;
+	}
+	footer .container .social .iconcon {
+		gap: 24px;
+	}
+	footer .img {
+		left: -20px;
+		margin-bottom: 15px;
+	}
+	footer .img img {
+		left: 0px;
+	}
+
+	footer .img p {
+		bottom: -10px;
+		left: 18px;
+	}
+}
