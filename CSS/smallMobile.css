@@ -10,10 +10,11 @@
 	.blog .container .showBlog div,
 	.blog .container .showBlog div:hover::before,
 	form,
-	.about .someInfo p,
-	footer .img img {
+	footer,
+	.about .someInfo p {
 		width: 270px;
 	}
+
 	.Hello .container .image img {
 		height: 215px;
 	}
@@ -24,15 +25,17 @@
 		gap: 24px;
 	}
 	footer .img {
-		left: -20px;
+		left: -10px;
 		margin-bottom: 15px;
 	}
 	footer .img img {
 		left: 0px;
+		width: 250px;
 	}
 
 	footer .img p {
 		bottom: -10px;
 		left: 18px;
+		font-size: 14px;
 	}
 }
