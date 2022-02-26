@@ -10,6 +10,8 @@
 	.blog .container .showBlog div,
 	.blog .container .showBlog div:hover::before,
 	form,
+	footer,
+	.about .someInfo p,
 	footer .img img {
 		width: 270px;
 	}
