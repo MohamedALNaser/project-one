@@ -378,6 +378,10 @@ footer .toTop div::after {
 footer .container {
 	align-items: center;
 }
+.contact .container .send textarea#message {
+	width: 325px;
+	height: 216px;
+}
 form {
 	display: flex;
 	flex-flow: column nowrap;
